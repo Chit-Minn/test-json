@@ -1,4 +1,5 @@
-{
+[
+  {
   "template_name": "UD",
   "function_list": [
     {
@@ -79,3 +80,4 @@
     }
   ]
 }
+]
