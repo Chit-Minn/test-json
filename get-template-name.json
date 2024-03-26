@@ -1,4 +1,5 @@
-{
+[
+  {
   "template_name": "UD",
   "message_type": "notification",
   "interface_type": "REST",
@@ -6,4 +7,5 @@
   "bak_directory": "/path/to/backup/directory",
   "default_owner_code": "OWN123",
   "default_whs_code": "WHS456"
-}
+  }
+]
