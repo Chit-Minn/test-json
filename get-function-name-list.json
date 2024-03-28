@@ -1,81 +1,87 @@
 {
-  "template_name": "UD",
-  "function_list": [
-    {
-      "function_name": "BAPI_INSPLOT_GETLIST",
-      "function_seq": 1,
-      "function_type": "GET",
-      "commit_function_name": "BAPI_INSPLOT_GETLIST_COMMIT",
-      "push_request": [
-        {
-          "tag": "criteria",
-          "section": "filters",
-          "filter_col_no": 1,
-          "have_sub_tag": true,
-          "comparison": "EQUALS",
-          "comparison_value": "critical",
-          "comparison_type": "STRING",
-          "sub_tag": [
-            {
-              "sub_tag": "minimum_quantity",
-              "filter_col_no": 2,
-              "comparison": "GREATER_THAN",
-              "comparison_value": "10",
-              "comparison_type": "INTEGER"
-            }
-          ]
-        }
-      ],
-      "capture_response": [
-        {
-          "xml_tag": "inspection_lot",
-          "section": "lots",
-          "active": true,
-          "col_pos": 1,
-          "default_value": "NA"
-        },
-        {
-          "xml_tag": "inspection_date",
-          "section": "lots",
-          "active": true,
-          "col_pos": 2,
-          "default_value": "NA"
-        }
-      ]
-    },
-    {
-      "function_name": "BAPI_INSPLOT_GETDETAIL",
-      "function_seq": 2,
-      "function_type": "GET",
-      "commit_function_name": "BAPI_INSPLOT_GETDETAIL_COMMIT",
-      "push_request": [
-        {
-          "tag": "lot_id",
-          "section": "lot_details",
-          "filter_col_no": 2,
-          "have_sub_tag": false,
-          "comparison": "EQUALS",
-          "comparison_value": "LOT123",
-          "comparison_type": "STRING",
-          "sub_tag": []
-        }
-      ],
-      "capture_response": [
-        {
-          "xml_tag": "inspection_result",
-          "section": "inspection_results",
-          "active": true,
-          "col_pos": 1,
-          "default_value": "NA"
-        },
-        {
-          "xml_tag": "inspection_notes",
-          "section": "inspection_results",
-          "active": true,
-          "col_pos": 2,
-          "default_value": "NA"
-        }
-      ]
-    }
-  ]
+  "IsSuccess": true,
+  "MessageNumber": 0,
+  "Message": "",
+  "AdditionalInformation": "",
+  "Result": {
+    "template_name": "UD",
+    "function_list": [
+      {
+        "function_name": "BAPI_INSPLOT_GETLIST",
+        "function_seq": 1,
+        "function_type": "GET",
+        "commit_function_name": "BAPI_INSPLOT_GETLIST_COMMIT",
+        "push_request": [
+          {
+            "tag": "criteria",
+            "section": "filters",
+            "filter_col_no": 1,
+            "have_sub_tag": true,
+            "comparison": "EQUALS",
+            "comparison_value": "critical",
+            "comparison_type": "STRING",
+            "sub_tag": [
+              {
+                "sub_tag": "minimum_quantity",
+                "filter_col_no": 2,
+                "comparison": "GREATER_THAN",
+                "comparison_value": "10",
+                "comparison_type": "INTEGER"
+              }
+            ]
+          }
+        ],
+        "capture_response": [
+          {
+            "xml_tag": "inspection_lot",
+            "section": "lots",
+            "active": true,
+            "col_pos": 1,
+            "default_value": "NA"
+          },
+          {
+            "xml_tag": "inspection_date",
+            "section": "lots",
+            "active": true,
+            "col_pos": 2,
+            "default_value": "NA"
+          }
+        ]
+      },
+      {
+        "function_name": "BAPI_INSPLOT_GETDETAIL",
+        "function_seq": 2,
+        "function_type": "GET",
+        "commit_function_name": "BAPI_INSPLOT_GETDETAIL_COMMIT",
+        "push_request": [
+          {
+            "tag": "lot_id",
+            "section": "lot_details",
+            "filter_col_no": 2,
+            "have_sub_tag": false,
+            "comparison": "EQUALS",
+            "comparison_value": "LOT123",
+            "comparison_type": "STRING",
+            "sub_tag": []
+          }
+        ],
+        "capture_response": [
+          {
+            "xml_tag": "inspection_result",
+            "section": "inspection_results",
+            "active": true,
+            "col_pos": 1,
+            "default_value": "NA"
+          },
+          {
+            "xml_tag": "inspection_notes",
+            "section": "inspection_results",
+            "active": true,
+            "col_pos": 2,
+            "default_value": "NA"
+          }
+        ]
+      }
+    ]
+  }
 }
