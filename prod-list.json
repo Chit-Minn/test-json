@@ -3,7 +3,7 @@
   "MessageNumber": 0,
   "Message": "",
   "AdditionalInformation": "",
-  "Result":[
+  "Result": "[
     {
       "MATNR": "123456",
       "MAKTX": "Sample Product 1",
@@ -104,5 +104,5 @@
       "LGORTS": "005",
       "QMATV": 10
     }
-  ]
+  ]"
 }
