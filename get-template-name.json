@@ -4,7 +4,7 @@
   "Message": "",
   "AdditionalInformation": "",
   "Result": {
-    "template_name": "UD",
+    "template_name": "MaterialMaster",
     "message_type": "notification",
     "interface_type": "REST",
     "directory": "/path/to/directory",
